@@ -1,7 +1,6 @@
 # help-me
 
 
-
 * cd /var/www/html/modules/custom
 * git clone https://github.com/politsyna/help-me
 
