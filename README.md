@@ -2,6 +2,6 @@
 
 git clone https://github.com/politsyna/help-me
 
-git add *
-git commit -m "тут пишем что изменили"
-git push
+* git add *
+* git commit -m "тут пишем что изменили"
+* git push
