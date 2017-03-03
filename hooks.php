@@ -13,15 +13,27 @@ use Drupal\node_orders\Controller\Group;
 
 /**
  * Implements hook_entity_presave.
+ * Данная функция будет вызвана перед сохранение любой сущаности:
+ * ноды, юзера, термина таксономии, филд-коллекшена.
  */
-function hook_entity_presave(EntityInterface $node) {
-  if (method_exists($node, 'getType') && $node->getType() == 'orders') {
-    $usluga = ' --- ';
-    if (is_object($node->field_orders_ref_activity)) {
-      $usluga = $node->field_orders_ref_activity->entity->title->value;
+function hook_entity_presave(EntityInterface $entity) {
+  // $entity - может содержать что угодно: ноду, юзера и т.п.
+  // Мы знаем, что если у ноды есть метод 'getType', но это нода.
+  if (method_exists($entity, 'getType') {
+    $node = $entity;
+    // Мы сократили вид сущности до ноды, но ноды тоже бывают разные:
+    // услуга, команда, заказ, оплата.
+    // Будет выполнять наши действия только на определённом типе ноды (тип материала).
+    if ($node->getType() == 'orders') {
+      // Сформируем заголовок по принципу "заявка от %дата%".
+      $my_title = 'Заявка от ' . format_date(time(), 'long');
+      // Положим значение в поле 'title'.
+      $node->title->setValue($my_title);
     }
-    $title = 'Заявка на ' . $usluga . ' от ' . format_date(time(), 'long');
-    $node->title->setValue($title);
+  }
+  // Спосок записи проверки в одну строку
+  if (method_exists($node, 'getType') && $node->getType() == 'orders') {
+    // $node->title->setValue($my_title);
   }
 }
 
