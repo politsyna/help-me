@@ -60,4 +60,8 @@ function hook_entity_view(array &$build, EntityInterface $entity, EntityViewDisp
       }
     }
   }
+  // Спосок записи проверки в одну строку
+  if ($view_mode == 'full' && method_exists($node, 'getType') && $node->getType() == 'orders') {
+    // $node->title->setValue($my_title);
+  }
 }
