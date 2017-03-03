@@ -9,7 +9,6 @@
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
-use Drupal\node_orders\Controller\Group;
 
 /**
  * Implements hook_entity_presave.
@@ -39,12 +38,26 @@ function hook_entity_presave(EntityInterface $entity) {
 
 /**
  * Implements hook_entity_view.
+ * Функция вызывается перед тем, как нарисовать карточку любой сущности: ноды, юзера, термина и т.п.
+ * $entity - содержит саму сущность
+ * $build - массив данных, на основании которого будет построена карточка товара
+ * $view_mode - способ отображения: full - если мы находимся на карточке, напрмер /node/22 или /user/1
  */
 function hook_entity_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
-  if (method_exists($entity, 'getType') && $entity->getType() == 'orders') {
-    $group = Group::collectionPrepare($entity);
-    dsm($group);
-    //$entity->field_orders_group->setValue($group);
-    //$entity->save(TRUE);
+  // $entity - может содержать что угодно: ноду, юзера и т.п.
+  // Мы знаем, что если у сущности (entity) есть метод 'getType', но это нода.
+  if (method_exists($entity, 'getType') {
+    $node = $entity;
+    // Мы сократили вид сущности до ноды, но ноды тоже бывают разные:
+    // услуга, команда, заказ, оплата.
+    // Будет выполнять наши действия только на определённом типе ноды (тип материала).
+    if ($node->getType() == 'orders') {
+      // Хорошая практика проверить находимся мы на самой странице, или на её анонсе:
+      if ($view_mode == 'full'){
+        $my_title = 'Заявка от ' . format_date(time(), 'long');
+        $node->title->setValue($my_title);
+        $node->save(TRUE);
+      }
+    }
   }
 }
