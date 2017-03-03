@@ -18,7 +18,7 @@ use Drupal\node_orders\Controller\Group;
  */
 function hook_entity_presave(EntityInterface $entity) {
   // $entity - может содержать что угодно: ноду, юзера и т.п.
-  // Мы знаем, что если у ноды есть метод 'getType', но это нода.
+  // Мы знаем, что если у сущности (entity) есть метод 'getType', но это нода.
   if (method_exists($entity, 'getType') {
     $node = $entity;
     // Мы сократили вид сущности до ноды, но ноды тоже бывают разные:
