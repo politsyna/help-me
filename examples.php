@@ -37,7 +37,7 @@ foreach ($data as $key => $value) {
     'index' => $index_current,
     'height' => '???',
   ];
-  // Положим $info в другие индексы.
+  // 4.5 Положим $info в массив, задав свой интекс.
   $array_info[$name_current] = $info_current;
 }
 
