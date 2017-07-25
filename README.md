@@ -5,6 +5,6 @@
 * git clone https://github.com/politsyna/help-me
 * cd help-me
 
-* git add *
+* git add .
 * git commit -m "тут пишем что изменили"
 * git push
