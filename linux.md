@@ -22,7 +22,7 @@
 
 # Установка
  * `apt-get install openssh-server ubuntu` - установить SSH
- * `/ets/init.d/ssh (start|stop|restart)` - включить/выклчить сервер
+ * `service ssh start` или `/ets/init.d/ssh (start|stop|restart)` - включить/выклчить сервер
 
 ## DRUSH:::
 ```
