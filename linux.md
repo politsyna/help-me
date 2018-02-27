@@ -9,6 +9,8 @@
  * `chmod +x` - разрешить программе исполняться
  * `mv` - переместить файл
  * `wget` - скачать
+ * `&&` - соединить команды
+ * `\` - перенос команды на новую строчку (чтобы удобнее смотреть)
  
 # Установка
 ## DRUSH:::
@@ -32,3 +34,5 @@ apt-get update && \
     curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
     apt-get install -y nodejs
 ```
+## NodeJS модули:::
+`npm install gulpjs/gulp-cli && npm install gulpjs/gulp#4.0 --save-dev`
