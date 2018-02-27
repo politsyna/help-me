@@ -44,8 +44,10 @@ apt-get update && \
     curl -sL https://deb.nodesource.com/setup_9.x | bash - && \
     apt-get install -y nodejs
 ```
-## NodeJS модули:::
-`npm install gulpjs/gulp-cli && npm install gulpjs/gulp#4.0 --save-dev`
+## Модули:::
+ * NodeJS: `npm install gulpjs/gulp-cli && npm install gulpjs/gulp#4.0 --save-dev`
+ * Composer: `composer require "codeception/codeception" --dev`
+ * Python: `pip install awscli`
 
 # Файлики:
  * `~/.bash_profile` + `~/.bashrc` - расскрашивание консоли + команды `ll`, `e`
