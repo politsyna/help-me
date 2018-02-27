@@ -20,7 +20,7 @@
  * опция рекурсивно `-r`, `-R` - если директория а не файл
 
 # Установка
- * `apt-get install openssh-server ubuntu` - установить SSH
+ * `apt-get install openssh-server` - установить SSH
  * `service ssh start` или `/ets/init.d/ssh (start|stop|restart)` - включить/выклчить сервер
 
 ## DRUSH:::
