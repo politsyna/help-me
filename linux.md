@@ -10,6 +10,8 @@
  * `&&` - соединить команды
  * `\` - перенос команды на новую строчку (чтобы удобнее смотреть)
  * `unzip`, `tar -xvzf` распаковать файл
+ * `passwd` - установить пароль, `sudo passwd root` - влючить рута
+ * 
 
 ## команды для работы с файлами
  * `ls` - список всего в директории (`ll`) 
@@ -19,6 +21,9 @@
  * опция рекурсивно `-r`, `-R` - если директория а не файл
 
 # Установка
+ * `apt-get install openssh-server ubuntu` - установить SSH
+ * `/ets/init.d/ssh (start|stop|restart)` - включить/выклчить сервер
+
 ## DRUSH:::
 ```
 wget https://s3.amazonaws.com/files.drush.org/drush.phar -q -O drush \
