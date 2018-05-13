@@ -15,7 +15,7 @@
 * `selenium-standalone start` - запуск
 * `codeceptjs run --steps` - запуск
 
-#Файлы
+## Файлы
 ### codecept.json (правим)
 ```js
 {
