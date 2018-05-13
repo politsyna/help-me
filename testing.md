@@ -55,9 +55,6 @@ Scenario('myTest', (I) => {
 ### Переключение на Nightmare
 ```json
 {
-  "tests": "./*_test.js",
-  "timeout": 10000,
-  "output": "./output",
   "helpers": {
     "Nightmare": {
       "url": "https://ya.ru",
