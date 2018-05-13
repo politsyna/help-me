@@ -52,6 +52,21 @@ Scenario('myTest', (I) => {
   "translation": "ru-RU"
 }
 ```
+### Переключение на Nightmare
+```json
+{
+  "tests": "./*_test.js",
+  "timeout": 10000,
+  "output": "./output",
+  "helpers": {
+    "Nightmare": {
+      "url": "https://ya.ru",
+      "show": false,
+      "restart": false
+    }
+  }
+}
+```
 ## Траблшутинг
 * `I.amOnPage is not a function` - не заполнены `"helpers": {` в codecept.json
 * `"before all" hook: codeceptjs.beforeSuite` + `Error: no DISPLAY environment variable specified` в консоли Selenium - решается запуском selenium на хосте.
