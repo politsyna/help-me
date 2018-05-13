@@ -18,6 +18,11 @@
 ## Файлы
 ### MyTest_test.js (создаём)
 ```js
+/**
+ * @file
+ * MyFirst CodeceptJS TEST.
+ */
+
 Feature('CodeceptJS WebDriverIO demo');
 
 Scenario('myTest', (I) => {
