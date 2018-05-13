@@ -69,4 +69,5 @@ Scenario('myTest', (I) => {
 ## Траблшутинг
 * `I.amOnPage is not a function` - не заполнены `"helpers": {` в codecept.json
 * `"before all" hook: codeceptjs.beforeSuite` + `Error: no DISPLAY environment variable specified` в консоли Selenium - решается запуском selenium на хосте.
-
+* Nightmare - не работает (это nodeJS, тут мого чего не работает)
+* WebDriverIO:browser:`chrome` - не работает (это nodeJS, тут мого чего не работает)
