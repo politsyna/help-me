@@ -1,4 +1,7 @@
 # Тестирование: Selenium codecept.io+WebDriverIO
+## Ссылки
+* https://codecept.io/helpers/WebDriverIO/ - WebDriverIO
+* https://codecept.io/helpers/Nightmare/ - Nightmare
 ## QuickStart
 * https://codecept.io/quickstart/
 * `PROJ=~/tests/myproj` - задаём переменную окружения с директорией проекта
