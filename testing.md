@@ -16,6 +16,15 @@
 * `codeceptjs run --steps` - запуск
 
 ## Файлы
+### MyTest_test.js (создаём)
+```js
+Feature('CodeceptJS WebDriverIO demo');
+
+Scenario('myTest', (I) => {
+  I.amOnPage('https://www.synapse-studio.ru/');
+  I.see('Сайты');
+});
+```
 ### codecept.json (правим)
 ```js
 {
@@ -37,13 +46,4 @@
   "name": "myproj",
   "translation": "ru-RU"
 }
-```
-### MyTest_test.js (правим)
-```js
-Feature('CodeceptJS WebDriverIO demo');
-
-Scenario('myTest', (I) => {
-  I.amOnPage('https://www.synapse-studio.ru/');
-  I.see('Сайты');
-});
 ```
