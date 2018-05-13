@@ -40,7 +40,7 @@ Scenario('myTest', (I) => {
     "WebDriverIO": {
       "url": "https://ya.ru",
       "browser": "firefox",
-      "restart": false
+      "restart": true
     }
   },
   "include": {
