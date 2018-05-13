@@ -1,5 +1,5 @@
-# Тестирование: codecept.io Selenium
-## QuickStart WebDriverIO
+# Тестирование: Selenium codecept.io+WebDriverIO
+## QuickStart
 * https://codecept.io/quickstart/
 * `PROJ=~/tests/myproj` - задаём переменную окружения с директорией проекта
 * `mkdir -p $PROJ && cd $PROJ` - переходим в директорию проекта
