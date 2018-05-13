@@ -53,6 +53,8 @@ Scenario('myTest', (I) => {
 }
 ```
 ### Переключение на Nightmare
+* Could not load helper Nightmare from module './helper/Nightmare': Cannot find module 'co'. Вот баг: https://github.com/Codeception/CodeceptJS/issues/1061 ждём поправленную версию или откатываемся на предыдущую
+* Один фиг найтмаре не работает, при переустановке ставить так `npm install -g nightmare --unsafe-perm`
 ```json
 {
   "helpers": {
@@ -67,4 +69,4 @@ Scenario('myTest', (I) => {
 ## Траблшутинг
 * `I.amOnPage is not a function` - не заполнены `"helpers": {` в codecept.json
 * `"before all" hook: codeceptjs.beforeSuite` + `Error: no DISPLAY environment variable specified` в консоли Selenium - решается запуском selenium на хосте.
-* Could not load helper Nightmare from module './helper/Nightmare': Cannot find module 'co'. Вот баг: https://github.com/Codeception/CodeceptJS/issues/1061 ждём поправленную версию или откатываемся на предыдущую
+
