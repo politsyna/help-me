@@ -1,4 +1,4 @@
-# Testing
+# Тестирование: codecept.io Selenium WebDriverIO/Nightmare QuickStart
 ## QuickStart
 * https://codecept.io/quickstart/
 * `PROJ=~/tests/myproj` - задаём переменную окружения с директорией проекта
