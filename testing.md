@@ -12,8 +12,8 @@
 * `ll` - видим что файлы создались
 
 ## Запуск
-* `selenium-standalone start` - запуск
-* `codeceptjs run --steps` - запуск
+* `selenium-standalone start` - запуск Selenium
+* `codeceptjs run --steps` - запуск тестов
 
 ## Файлы
 ### MyTest_test.js (создаём)
