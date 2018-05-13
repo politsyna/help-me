@@ -54,3 +54,4 @@ Scenario('myTest', (I) => {
 ```
 ## Траблшутинг
 * `I.amOnPage is not a function` - не заполнены `"helpers": {` в codecept.json
+* `"before all" hook: codeceptjs.beforeSuite` - вроде решилось либо перезапуском Selenium, либо запуском его на хосте.
