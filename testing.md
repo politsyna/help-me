@@ -52,3 +52,5 @@ Scenario('myTest', (I) => {
   "translation": "ru-RU"
 }
 ```
+## Траблшутинг
+* `I.amOnPage is not a function` - не заполнены `"helpers": {` в codecept.json
